@@ -6,16 +6,25 @@ import { ArrowRight, Sparkles, ChevronLeft, ChevronRight } from "lucide-react";
 export function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Background */}
+      {/* Background with Indian-inspired warmth */}
       <div className="absolute inset-0 gradient-hero" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.08),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--accent)/0.05),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(43_88%_66%_/_0.08),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(36_71%_51%_/_0.05),transparent_50%)]" />
+      
+      {/* Subtle mandala-inspired corner motif */}
+      <div className="absolute top-0 right-0 w-96 h-96 opacity-[0.03] pointer-events-none">
+        <svg viewBox="0 0 200 200" className="w-full h-full">
+          <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-primary" />
+          <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-saffron" />
+          <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-accent" />
+        </svg>
+      </div>
 
-      {/* Floating Elements */}
+      {/* Floating Elements with Indian colors */}
       <motion.div
         animate={{ y: [0, -15, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/4 left-[15%] w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20"
+        className="absolute top-1/4 left-[15%] w-16 h-16 rounded-2xl bg-saffron/10 border border-saffron/20"
       />
       <motion.div
         animate={{ y: [0, 15, 0] }}
@@ -25,7 +34,7 @@ export function HeroSection() {
       <motion.div
         animate={{ y: [0, -10, 0] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-1/4 left-[25%] w-10 h-10 rounded-lg bg-secondary border border-border"
+        className="absolute bottom-1/4 left-[25%] w-10 h-10 rounded-lg bg-primary/10 border border-primary/20"
       />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -41,14 +50,14 @@ export function HeroSection() {
             <span className="text-sm font-medium text-foreground">AI-Powered Entrepreneurship</span>
           </motion.div>
 
-          {/* Headline */}
+          {/* Headline with display font accent */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight"
           >
-            Try out our{" "}
+            <span className="font-display">Try out our</span>{" "}
             <span className="text-primary">AI Entrepreneur Bot</span>
           </motion.h1>
 
