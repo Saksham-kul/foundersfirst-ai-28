@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -42,6 +43,10 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        saffron: {
+          DEFAULT: "hsl(var(--saffron))",
+          foreground: "hsl(var(--saffron-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -53,6 +58,22 @@ export default {
         surface: {
           elevated: "hsl(var(--surface-elevated))",
           subtle: "hsl(var(--surface-subtle))",
+        },
+        // Indian-inspired named colors
+        indigo: {
+          DEFAULT: "hsl(208, 55%, 30%)",
+          light: "hsl(208, 45%, 45%)",
+          dark: "hsl(208, 60%, 20%)",
+        },
+        turmeric: {
+          DEFAULT: "hsl(36, 71%, 51%)",
+          light: "hsl(36, 75%, 65%)",
+          dark: "hsl(36, 65%, 40%)",
+        },
+        sand: {
+          DEFAULT: "hsl(30, 55%, 93%)",
+          light: "hsl(30, 55%, 97%)",
+          dark: "hsl(30, 45%, 85%)",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

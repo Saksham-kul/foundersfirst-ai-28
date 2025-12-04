@@ -9,16 +9,16 @@ const features = [
     title: "Validate Your Idea",
     description: "Get AI-powered feedback on your startup idea's viability, market potential, and competitive landscape.",
     href: "/ai-bot?mode=validate",
-    color: "text-amber-500",
-    bgColor: "bg-amber-500/10",
+    color: "text-saffron",
+    bgColor: "bg-saffron/10",
   },
   {
     icon: Target,
     title: "Categorize Your Idea",
     description: "Understand which industry sector and business category your startup falls into for better planning.",
     href: "/ai-bot?mode=categorize",
-    color: "text-emerald-500",
-    bgColor: "bg-emerald-500/10",
+    color: "text-accent",
+    bgColor: "bg-accent/10",
   },
   {
     icon: BookOpen,
@@ -41,12 +41,14 @@ export function FeaturesSection() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <span className="inline-block text-sm font-medium text-accent mb-3 tracking-wider uppercase">Your Journey Starts Here</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-display">
             Everything You Need to Start
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             From idea validation to funding discovery, we've got you covered at every step.
           </p>
+          <div className="divider-indian mt-8 max-w-xs mx-auto" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -60,7 +62,7 @@ export function FeaturesSection() {
             >
               <Link
                 to={feature.href}
-                className="group block p-8 rounded-3xl bg-card border border-border hover:border-primary/20 hover:shadow-elevated transition-all duration-300"
+                className="group block p-8 rounded-3xl bg-card border border-border hover:border-saffron/30 hover:shadow-[0_8px_32px_-8px_hsl(43_88%_66%_/_0.15)] transition-all duration-300"
               >
                 <div className={`w-14 h-14 rounded-2xl ${feature.bgColor} flex items-center justify-center mb-6`}>
                   <feature.icon className={`w-7 h-7 ${feature.color}`} />

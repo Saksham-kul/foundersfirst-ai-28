@@ -25,12 +25,12 @@ export function Header() {
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+          {/* Logo with Indian-inspired accent */}
+          <Link to="/" className="flex items-center gap-2 group">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-sm group-hover:shadow-[0_0_12px_hsl(43_88%_66%_/_0.3)] transition-shadow duration-300">
               <span className="text-primary-foreground font-bold text-lg">F</span>
             </div>
-            <span className="font-bold text-xl text-foreground">FoundersFirst</span>
+            <span className="font-bold text-xl text-foreground font-display">FoundersFirst</span>
           </Link>
 
           {/* Desktop Navigation */}
