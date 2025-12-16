@@ -9,6 +9,7 @@ import Schemes from "./pages/Schemes";
 import Knowledge from "./pages/Knowledge";
 import About from "./pages/About";
 import Auth from "./pages/Auth";
+import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +22,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/ai-bot" element={<AIBot />} />
           <Route path="/schemes" element={<Schemes />} />
           <Route path="/knowledge" element={<Knowledge />} />
